@@ -3,7 +3,7 @@ set shell := ["powershell.exe", "-NoLogo", "-Command"]
 
 # Запуск FastAPI приложения через Docker Compose
 up:
-    docker compose up --build -d
+    docker compose -f compose.yml up --build -d
 
 # Остановка контейнеров
 down:
