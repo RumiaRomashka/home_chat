@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 """Точки входа для API"""
 
-from src.db import SessionLocal #для создания нового подключения к базе
+from src.db import get_session #для создания нового подключения к базе
 from sqlalchemy import text #оборачиваем команду в текст для SQLALchemy 
 from fastapi import Depends #импортируем зависимости
 from sqlalchemy.ext.asyncio import AsyncSession
